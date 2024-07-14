@@ -1,0 +1,34 @@
+<mat-toolbar class="toolbar-style">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Monty Hall Simulation</span>
+
+  </mat-toolbar>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <mat-card  (click)="openDoor(1)" class="card-style" appearance="outlined">
+            <img *ngIf="doorImageOne" mat-card-image class="image-style" src={{doorOneImage}} >
+            <img *ngIf="carImageOne" mat-card-image class="image-style" src={{carOneImage}} >          
+            <img *ngIf="goatsImageOne" mat-card-image class="image-style" src={{goatsOneImage}} >
+          </mat-card>
+      </div>
+      <div class="col-sm">
+        <mat-card  (click)="openDoor(2)" class="card-style" appearance="outlined">
+            <img *ngIf="doorImageTwo" mat-card-image class="image-style" src={{doorTwoImage}} >
+            <img  *ngIf="carImageTwo" mat-card-image class="image-style" src={{carTwoImage}} >          
+            <img  *ngIf="goatsImageTwo" mat-card-image class="image-style" src={{goatsTwoImage}} >
+          </mat-card>
+      </div>
+      <div class="col-sm">
+        <mat-card  (click)="openDoor(3)" class="card-style" appearance="outlined">
+            <img *ngIf="doorImageThree" mat-card-image class="image-style" src={{doorThreeImage}} >
+            <img *ngIf="carImageThree" mat-card-image class="image-style" src={{carThreeImage}} >          
+            <img *ngIf="goatsImageThree" mat-card-image class="image-style" src={{goatsThreeImage}} >
+            
+          </mat-card>
+      </div>
+    </div>
+  </div>
